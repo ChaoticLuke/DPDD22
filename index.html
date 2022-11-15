@@ -10,20 +10,15 @@
     <link rel = "stylesheet" href = "L.Control.MousePosition.css" />
   </head>
   <body>
-    <div style = "height:900px" id="map"></div>
+   <div style="height: 900px" id="map"></div>
     <script>
-      var map = L.map('map').setView([51.1393, -2.6928], 13);
+      var map = L.map('map').setView([51.1444, -2.6986], 10);
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-          attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map);
-      map.addControl(new L.Control.Fullscreen());
-      L.control.mousePosition().addTo(map);
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+     map.addControl(new L.Control.Fullscreen());
+     L.control.mousePosition().addTo(map); 
     </script>
-
   </body>
-  
-
-
-
 </html>
